@@ -44,10 +44,12 @@ class Newspaper(Periodical):
     def __init__(self, title, price, period, publisher) -> None:
         super().__init__(title, price, period, publisher)
 
+# Deceleration of the classes.
 b1 = Book("Raven Claw", 2569, "John Wick", 2548)
 m1 = Magazine("Red Lines", 879, "monthly","Rote Linien")
 n1 = Newspaper("The Rise", 23, "daily", "Der Aufgang")
 
+# Observing classes.
 print(f">>> Book b1: Title:{b1.title}, author: {b1.author}, pages: {b1.pages}, price: {b1.price}")
 print(f">>> Magazine m1: Title:{m1.title}, publisher: {m1.publisher}, period: {m1.period}, price: {m1.price}")
 print(f">>> Newspaper n1: Title:{n1.title}, publisher: {n1.publisher}, period: {n1.period}, price: {n1.price}")
