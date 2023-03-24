@@ -3,7 +3,7 @@
 ## Object-Oriented Python Programming Repository
 Welcome to my personal repository for object-oriented programming in Python. My name is Yash Revannavar, and I am passionate about software development and programming. I have created this repository to store and maintain my personal Python projects, especially those related to object-oriented programming.
 
-## topics tree
+## Topics tree
 - basic01.py
     - static methods
     - class methods
