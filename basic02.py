@@ -2,7 +2,7 @@
 
 class Publications:
     """
-    This class will be inherited in the Periodical class.
+    This Base class will be inherited in the Periodical class.
     As the Title and the price will be constant in the Books, Magazine and Newspaper classes.
     """
     def __init__(self, title, price) -> None:
@@ -11,7 +11,7 @@ class Publications:
 
 class Periodical(Publications):
     """
-    This class will be inherited in the Books, Magazine and Newspaper classes.
+    This Base class will be inherited in the Books, Magazine and Newspaper classes.
     As the period and the publisher will be constant in the Magazine and Newspaper classes.
     This class also inherits Publication as a super class as it has title and price attributes.
     """
@@ -22,7 +22,7 @@ class Periodical(Publications):
 
 class Book(Publications):
     """
-    This is a Book class inherits Publication class as it needs only title and price.
+    This is a Book sub class inherits Publication class as it needs only title and price.
     Also has its independent attributes such as author and pages. 
     """
     def __init__(self, title, price, author, pages) -> None:
@@ -32,14 +32,14 @@ class Book(Publications):
 
 class Magazine(Periodical):
     """
-    This is a Magazine class inherits Periodical class as it needs all the attributes.
+    This is a Magazine sub class inherits Periodical class as it needs all the attributes.
     """
     def __init__(self, title, price, period, publisher) -> None:
         super().__init__(title, price, period, publisher)
 
 class Newspaper(Periodical):
     """
-    This is a Newspaper class inherits Periodical class as it needs all the attributes.
+    This is a Newspaper sub class inherits Periodical class as it needs all the attributes.
     """
     def __init__(self, title, price, period, publisher) -> None:
         super().__init__(title, price, period, publisher)
