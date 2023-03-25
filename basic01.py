@@ -90,3 +90,23 @@ print(f">>> Class type: {type(b2)}\n")
 print(f">>> if b1 is a book class: {isinstance(b1,Book)}")
 print(f">>> if n1 is a book class: {isinstance(n1,Book)}")
 print(f">>> if n1 is a Newspaper class: {isinstance(n1,Newspaper)}")
+
+# Output:
+# >>> Class attribute: ('Hardcover', 'Paperback', 'Comic', 'eBook')
+
+# >>> The books list using static method: ['Go man', 'Go girl']
+
+# >>> Class b1: <__main__.Book object at 0x7fdc090e7d90>
+# >>> Title: Go man
+# >>> Author: Harry
+# >>> Pages: 890
+# >>> Price: 452
+# >>> Price with get_price: 452
+# >>> Price with get_price with discount: 226.0
+
+# >>> Class b2: <__main__.Book object at 0x7fdc090e7d60>
+# >>> Class type: <class '__main__.Book'>
+
+# >>> if b1 is a book class: True
+# >>> if n1 is a book class: False
+# >>> if n1 is a Newspaper class: True

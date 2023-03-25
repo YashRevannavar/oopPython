@@ -53,3 +53,8 @@ n1 = Newspaper("The Rise", 23, "daily", "Der Aufgang")
 print(f">>> Book b1: Title:{b1.title}, author: {b1.author}, pages: {b1.pages}, price: {b1.price}")
 print(f">>> Magazine m1: Title:{m1.title}, publisher: {m1.publisher}, period: {m1.period}, price: {m1.price}")
 print(f">>> Newspaper n1: Title:{n1.title}, publisher: {n1.publisher}, period: {n1.period}, price: {n1.price}")
+
+# Output:
+# >>> Book b1: Title:Raven Claw, author: John Wick, pages: 2548, price: 2569
+# >>> Magazine m1: Title:Red Lines, publisher: Rote Linien, period: monthly, price: 879
+# >>> Newspaper n1: Title:The Rise, publisher: Der Aufgang, period: daily, price: 23

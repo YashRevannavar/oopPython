@@ -42,3 +42,7 @@ sq1 = Square(23)
 
 print(f">>> Area of the circle c1 🟢: {c1.cal_area()}")
 print(f">>> Area of the square sq1 🟩: {sq1.cal_area()}")
+
+# Output:
+# >>> Area of the circle c1 🟢: 12.56
+# >>> Area of the square sq1 🟩: 529
