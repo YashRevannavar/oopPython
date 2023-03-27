@@ -18,6 +18,9 @@ Welcome to my personal repository for object-oriented programming in Python. My 
 - composition.py
     - composition
     - _ _ str _ _
+- magic_methods_01.py
+    - _ _ str _ _
+    - _ _ repr _ _
 ## Contributions
 While this is primarily a personal repository, I am open to suggestions and feedback on my code. If you have any ideas or suggestions for improving my code, please feel free to create an issue or submit a pull request.
 
