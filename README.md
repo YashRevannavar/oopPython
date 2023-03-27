@@ -21,6 +21,13 @@ Welcome to my personal repository for object-oriented programming in Python. My 
 - magic_methods_01.py
     - _ _ str _ _
     - _ _ repr _ _
+- magic_methods_02.py
+    - _ _ eq _ _
+    - _ _ ge _ _
+    - _ _ lt _ _
+    - sorting 
+
+
 ## Contributions
 While this is primarily a personal repository, I am open to suggestions and feedback on my code. If you have any ideas or suggestions for improving my code, please feel free to create an issue or submit a pull request.
 
