@@ -17,7 +17,7 @@ Welcome to my personal repository for object-oriented programming in Python. My 
     - Multiple inheritance
 - composition.py
     - composition
-    - __str__
+    - _ _ str _ _
 ## Contributions
 While this is primarily a personal repository, I am open to suggestions and feedback on my code. If you have any ideas or suggestions for improving my code, please feel free to create an issue or submit a pull request.
 
