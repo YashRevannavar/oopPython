@@ -26,6 +26,10 @@ Welcome to my personal repository for object-oriented programming in Python. My 
     - _ _ ge _ _
     - _ _ lt _ _
     - sorting 
+- magic_methods_03.py
+    - _ _ str _ _
+    - _ _ getattribute _ _
+    - _ _ setattr _ _
 
 
 ## Contributions
