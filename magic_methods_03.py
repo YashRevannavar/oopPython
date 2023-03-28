@@ -1,4 +1,4 @@
-# Understanding __getattribute__ and __setattr__ Magic Methods
+# Understanding __getattribute__, __setattr__ and __call__ Magic Methods
 
 class Book:
     """
@@ -25,7 +25,7 @@ class Book:
 
     def __getattribute__(self, name: str):
         """
-        __getattribute__(self, name: str) - is called when an attribute of a Book object is accessed.
+        __getattribute__(self, name: str) - is called when an attribute of a Book object is accessed
         This method checks if the attribute is "price". If it is, it gets the price using 
         super().__getattribute__("price"), and also gets the discount using 
         super().__getattribute__("_discount"). It returns the discounted price by subtracting the 
@@ -50,13 +50,27 @@ class Book:
                 raise ValueError("The price attr must be a float")
         return super().__setattr__(name, value)
 
+    def __call__(self, title, author, price):
+        """
+        Set the title, author, and price attributes of the Book object by calling it as a function.
+        """
+        self.title = title
+        self.author = author
+        self.price = price
+
 # Deceleration of b1 and b2
 b1 = Book("Go man", "Harry", 452.03)
-b2 = Book("Go girl", "Tom", 1025.00)
 
 # Observing __getattribute__ and __setattr__:
 b1.price = float(423)
 print(f"{b1}")
 
+# Observing __call__
+print(f"b1 after __call__::: {b1}")
+b1("Go girl", "Tom", 1025.00)
+print(f"b1 after __call__::: {b1}")
+
 # Outputs:
 # Go man, book is written by Harry pricing at 380.7
+# b1 after __call__::: Go man, book is written by Harry pricing at 380.7
+# b1 after __call__::: Go girl, book is written by Tom pricing at 922.5
